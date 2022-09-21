@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <label>Ingrese 2 numeros a calcular</label><br />
+      <hr />
+      <input type="number" name="n1" id="n1" /><br /><br />
+      <input type="number" name="n2" id="n2" /><br />
+      <p>
+        <li>"S" o "s" para sumar</li>
+        <li>"R" o "r" para resta</li>
+        <li>"M" o "m" para multiplicacion</li>
+        <li>"D" o "d" para division</li>
+      </p>
+      <label>Ingrese la letra</label><br /><br />
+      <input type="text" name="letra" id="letra" />
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="borrar()">Borrar</button>
+      <hr />
+      <p id="resultado"></p>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
