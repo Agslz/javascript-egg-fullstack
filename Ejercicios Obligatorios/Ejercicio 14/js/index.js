@@ -1,5 +1,3 @@
-const RESULTADO = document.getElementById("resultado");
-
 class Libro {
   constructor(isbn, titulo, autor, nPaginas) {
     this.isbn = isbn;
@@ -21,7 +19,7 @@ const CrearLibro = () => {
 
 function mostrarDatos() {
   const Librito = CrearLibro();
-  RESULTADO.innerHTML = Swal.fire(
+  Swal.fire(
     `El numero de ISBN es: ${Librito.isbn} <br> El titulo del libro es: ${Librito.titulo} <br> El autor del libro es: ${Librito.autor} <br> La cantidad de paginas es: ${Librito.nPaginas}`
   );
 }
