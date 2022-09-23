@@ -1,8 +1,4 @@
-const array = [true, 5, "hola", "adios", 2];
-
-function mostrarArray() {
-  Swal.fire(`El array es: [${array}]`);
-}
+const array = [true, 5, false, "hola", "adios", 2];
 
 let textoMayor = () => (array[3].length > array[4] ? array[3] : array[4]);
 let booleanTrue = () => (array[0] || array[2] ? true : false);
@@ -19,4 +15,8 @@ function mostrarDatos() {
   La resta es: ${resta()} <br>
   La división es: ${division()} <br>
   La multiplicación es: ${multiplicacion()}`);
+}
+
+function mostrarArray() {
+  Swal.fire(`El array es: [${array}]`);
 }
