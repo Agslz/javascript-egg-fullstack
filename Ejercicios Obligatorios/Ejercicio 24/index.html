@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 24</title>
+    <title>Ejercicio 15</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,7 +13,34 @@
     />
   </head>
   <body>
-    <script src="./js/index.js"></script>
+    <form id="formulario">
+      <div
+        class="position-absolute top-50 start-50 translate-middle w-75 p-3 border mb-5 border border-secondary"
+      >
+        <h2 class="text-center">Ingrese el radio</h2>
+        <div class="p-2 mb-3">
+          <label for="exampleInputEmail1" class="form-label">Radio</label>
+          <input name="radio" type="number" class="form-control" id="radio" placeholder="Ingrese un radio a calcular" />
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            onclick="mostrarDatos()"
+            name="button"
+            class="btn btn-primary"
+            type="button"
+            id="button"
+          >
+            Mostrar perimetro y area
+          </button>
+        </div>
+      </div>
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
